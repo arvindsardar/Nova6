@@ -1,0 +1,13 @@
+/*
+Theme Name: [Nova6] HealthAnd Theme
+Author: Arvind Sardar
+Description: Base Theme
+License: GPLv2 License
+License URI: https://wordpress.org/about/gpl/
+Text Domain: nova
+Version: 6
+*/
+
+@import url(assets/css/design-system.css);
+@import url(assets/css/frontend.css);
+

@@ -1,0 +1,14 @@
+<?php
+/**
+ * The sidebar containing the main widget area
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package nova
+ */
+
+?>
+
+<aside id="secondary" class="widget-area">
+	<!-- <pre>Sidebar Code</pre> -->
+</aside><!-- #secondary -->

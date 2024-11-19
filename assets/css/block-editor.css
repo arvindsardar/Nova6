@@ -1,0 +1,180 @@
+/* Stylesheet for Gutenberg Block Editor
+**************************************************/
+	@import url(design-system.css);
+
+
+/* » Buttons */
+	body .editor-styles-wrapper .is-style-outline .wp-block-button__link{
+		color: var(--nova-color-001);
+		background-color: white;
+		border: solid;
+	}
+	body .editor-styles-wrapper :where(.wp-element-button, .wp-block-button__link) {
+		color: white;
+		background-color: var(--nova-color-002);
+	}
+	.wp-block-button.is-style-text-button .wp-block-button__link {
+		background-color: transparent;
+		color: black;
+		padding: 0;
+		text-decoration: underline;
+	}
+
+
+/* » Widths */
+	body .editor-styles-wrapper {
+		padding: 5px;
+		margin: 0 auto;
+		background-color: #f0f0f0;
+		background-image: url(../images/stripes.webp);
+	}
+	body .editor-styles-wrapper::before {
+		content: '';
+		width: var(--wp--style--global--content-size);
+		height: 100%;
+		position: absolute;
+		z-index: 1;
+		pointer-events: none;
+		border-left: fuchsia 1px dashed;
+		border-right: fuchsia 1px dashed;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.is-root-container > .wp-block:not(.alignwide):not(.alignfull):not([data-align="full"]) {
+		width: min(93%, 1200px);
+		margin-inline: auto;
+	}
+	.wp-block.alignwide {
+		max-width: 98% !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.wp-block.alignfull {
+		max-width: 98% !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	img{
+		max-width: 100%;
+	}
+
+/* » Typography */
+	.editor-styles-wrapper {
+		font-family: var(--nova-font-base);
+	}
+	:where(.editor-styles-wrapper) p {
+		line-height: 1.4;
+	}
+
+
+/* » Reusable Block */
+	.is-reusable{
+		position: relative;
+		border: dotted #e94726 1px;
+	}
+	.is-reusable:before{
+		border: 1px solid #ac341c;
+		color: #fff;
+		background-color: #e94726;
+		background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+		box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+		text-shadow: 0 1px 0 rgba(0,0,0,.2);
+		position: absolute;
+		top: -4px;
+		right: -4px;
+		content: 'Reusable Block';
+		text-transform: uppercase;
+		font: bold 9px arial, helvetica, sans-serif;
+		padding: 4px 12px;
+		background-clip: padding-box;
+		border-radius: 3px;
+		text-decoration: none;
+		z-index: 1;
+	}
+
+
+/* » Title */
+	.wp-block-post-title{
+		background-color: #fff;
+		padding: 10px;
+		box-shadow: 0px 2px 6px #00000017;
+	}
+
+/* » Columns Block */
+	.block-editor-block-list__block.wp-block-column.wp-block-column {
+		border: var(--nova-outline);
+		padding: 10px;
+	}
+
+/* » HTML Block */
+	div[aria-label="Block: Custom HTML"] textarea.block-editor-plain-text{
+		background-color: #222 !important;
+		color: white !important;
+	}
+
+
+/* » Paragraph Blocks */
+	p[data-empty="true"]{
+		border: dashed 1px gray;
+	}
+
+
+/* » Labelled Blocks */
+
+/* outline */
+	.wp-block-spacer:before,
+	.wp-block-group:before{
+		content: '';
+		border: var(--nova-outline);
+		position: absolute;
+		width: calc(100% + 10px);
+		height: 100%;
+		top: -6px;
+		left: -6px;
+	}
+
+/* shaded */
+	.wp-block-spacer {
+		background: var(--nova-checkerboard);
+	}
+
+/* labels */
+	:is(.wp-block-group,.wp-block-spacer):not(.is-selected):after{
+		text-transform: uppercase;
+		font: bold 9px arial, helvetica, sans-serif;
+		color: #fff;
+		text-shadow: 0 1px 0 rgba(0,0,0,.2);
+		text-decoration: none;
+
+		width: fit-content;
+		height: fit-content;
+		padding: 2px 8px;
+		border: 1px solid #bbb;
+		background-color: #269CE9;
+		background-image: linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,0));
+		border-color: #269CE9;
+		background-clip: padding-box;
+		border-radius: 3px;
+		box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+
+		position: absolute;
+		top: -8px;
+		right: 5px;
+		z-index: 2;
+	}
+	.wp-block-spacer:not(.is-selected):after{
+		content: 'Spacer' !important;
+		opacity: 0.5;
+	}
+	.wp-block-group:not(.is-selected):after{
+		content: 'Group' !important;
+	}
+
+
+/* » Custom Blocks
+**************************************************/
+	.acf-block-component {
+		margin-bottom: 20px;
+	}

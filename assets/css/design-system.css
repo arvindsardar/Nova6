@@ -1,0 +1,77 @@
+/* used by backend & frontend */
+
+body{
+	/* radius */
+	--nova-radius--none: 0;
+	--nova-radius--xs: 4px;
+	--nova-radius--sm: 10px;
+	--nova-radius--md: 16px;
+	--nova-radius--lg: 24px;
+
+	/* spacing */
+	--nova-space--xs: clamp(12px, 10.545px + 0.455vw, 16px);
+	--nova-space--sm: clamp(12px, 4.727px + 2.273vw, 32px);
+	--nova-space--md: clamp(24px, 9.455px + 4.545vw, 48px);
+	--nova-space--lg: clamp(36px, 14.182px + 6.818vw, 96px);
+	--nova-space--xl: clamp(36px, 2.545px + 10.455vw, 128px);
+
+	--wp--preset--spacing--30: var(--nova-space--xs);
+	--wp--preset--spacing--40: var(--nova-space--sm);
+	--wp--preset--spacing--50: var(--nova-space--md);
+	--wp--preset--spacing--60: var(--nova-space--lg);
+	--wp--preset--spacing--70: var(--nova-space--xl);
+
+	/* shadows */
+	--box-shadow-md: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+	/* z-index */
+	--nova-z-header: 1000;
+	--nova-z-mid: 100;
+	--nova-z-floor: 0;
+
+	/* layout */
+	--nova-inset: 30px;
+	--nova-content-width: 1200px;
+	--nova-outside-content: calc( 100vw - var(--nova-content-width) );
+	--nova-content-width-wide: calc( var(--nova-content-width) + (var(--nova-outside-content) / 2) );
+
+	/* » Typography */
+	--nova-font-default: 'montserrat',sans-serif;
+	--nova-font-display: 'montserrat',sans-serif;
+	--nova-font-icons: 'remixicon' !important;
+
+	/* colors */
+	--nova-stripey: repeating-linear-gradient( 45deg, #f9f9fb, #f9f9fb 10px, #f0f0f0 10px, #f0f0f0 20px );
+	--nova-checkerboard: repeating-conic-gradient(rgba(0, 0, 0, 0.1) 0% 25%, rgba(255, 255, 255, 0.1) 0% 50%) 50% / 20px 20px;
+	--nova-outline: 1px dashed var(--nova-gray20);
+	--linearbg-fromleft: linear-gradient(90deg, rgba(0,0,0,0.6) 20%, rgba(0,0,0,0) 65%);
+
+	--nova-color-001: #007c68;
+	--nova-color-002: #ffc840;
+
+	--nova-neutral-dark: #212121;
+	--nova-neutral-mid: #969696;
+	--nova-neutral-light: #f1f2f2;
+
+	--nova-gray05: hsl(0, 0%, 95%);
+	--nova-gray10: hsl(0, 0%, 90%);
+	--nova-gray20: hsl(0, 0%, 80%);
+	--nova-gray30: hsl(0, 0%, 70%);
+	--nova-gray40: hsl(0, 0%, 60%);
+	--nova-gray50: hsl(0, 0%, 50%);
+	--nova-gray60: hsl(0, 0%, 40%);
+	--nova-gray70: hsl(0, 0%, 30%);
+	--nova-gray80: hsl(0, 0%, 20%);
+	--nova-gray90: hsl(0, 0%, 10%);
+
+	/* tints & shades */
+	--nova-tint-blue-20: color-mix(in srgb, var(--nova-color-002) 20%, white);
+
+	/*aspect ratio*/
+	--nova-landscape: 4 / 3;
+	--nova-portrait: 3 / 4;
+	--nova-square: 1;
+	--nova-wide: 16 / 9;
+	--nova-tall: 9 / 16;
+}
+

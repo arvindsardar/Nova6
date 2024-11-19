@@ -1,0 +1,77 @@
+{
+	"version": "2",
+	"settings": {
+		"border": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true
+		},
+		"color": {
+			"text": true,
+			"background": true,
+			"link": true,
+			"custom": true,
+			"customGradient": true,
+			"customDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"duotone": [],
+			"palette": [
+				{
+					"color": "var(--nova-color-001)",
+					"slug": "001",
+					"name": "Colour01"
+				},
+				{
+					"color": "var(--nova-color-002)",
+					"slug": "002",
+					"name": "Colour02"
+				},
+				{
+					"color": "#fff",
+					"slug": "white",
+					"name": "White"
+				},
+				{
+					"color": "#000",
+					"slug": "black",
+					"name": "Black"
+				},
+				{
+					"color": "var(--nova-neutral-light)",
+					"slug": "light",
+					"name": "Light Grey"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "var(--nova-content-width)",
+			"wideSize": "1400px"
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"units": ["px", "%", "em", "rem", "vh", "vw"],
+			"spacingScale": {
+				"steps": 5
+			},
+			"blockGap": true
+		},
+		"typography": {
+			"customFontSize": true,
+			"fontStyle": true,
+			"fontWeight": true,
+			"dropCap": false,
+			"letterSpacing": false,
+			"lineHeight": false,
+			"textDecoration": false,
+			"textTransform": false
+		}
+	},
+	"styles": {
+		"spacing": {
+			"blockGap": "0"
+		}
+	}
+}
