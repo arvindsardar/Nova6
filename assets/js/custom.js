@@ -31,3 +31,18 @@
 			document.body.classList.remove('scrolled');
 		}
 	}
+
+/* » Mobile Menu
+**************************************************/
+		//the mobile menu
+		const mobSubMenus = document.querySelectorAll('#menu-main-mobile .icon--ui');
+		mobSubMenus.forEach(item => {
+			item.addEventListener('click', function handleClick(event) {
+				event.preventDefault();
+				if (item.classList.contains('active')) {
+					event.target.closest('.menu-item').classList.remove('active')
+				} else {
+					event.target.closest('.menu-item').classList.add('active')
+				}
+			});
+		});

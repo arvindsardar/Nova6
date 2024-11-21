@@ -174,18 +174,6 @@
 	add_filter( 'pre_get_posts', 'nova_add_cpt_category_archives' );
 
 
-/* » Register Block Categories
-**************************************************/
-	add_filter( 'block_categories_all', 'nova_block_category', 10, 2);
-	function nova_block_category( $categories, $post ) {
-
-		array_unshift( $categories, array(
-			'slug'	=> 'fave',
-			'title' => 'Favourites'
-		) );
-
-		return $categories;
-	}
 
 /* » tests
 **************************************************/

@@ -31,7 +31,7 @@
 			$output .= '<a target="' . $item->target . '" href="' . $item->url . '">';
             $output .= $item->title;
 			if ($args->walker->has_children) {
-				$output .= '<i class="ri-arrow-right-s-line"></i>';
+				$output .= '<i class="icon--ui ri-arrow-right-s-line"></i>';
 			}
 			$output .= '</a>';
         }

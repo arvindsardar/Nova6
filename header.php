@@ -35,17 +35,18 @@
 			<input class="searchinput" type="text" placeholder="... type & enter, or esc ..." value="<?php get_search_query(); ?>" name="s" id="s" />
 		</form>
 	</dialog>
-		<!-- ------------ offscreen mobile menu ------------ -->
-			<section id="offscreen-menu" class="wrapper">
-				<?php wp_nav_menu(array(
-					'menu' => 'main',
-					'container' => false,
-					'menu_id' => 'menu-main-mobile',
-					'menu_class' => 'level-1',
-					"items_wrap" => '<nav id="%1$s" class="%2$s">%3$s</nav>',
-					'walker' => new Nova_Menu_Walker,
-				)); ?>
-			</section>
+
+	<!-- ------------ offscreen mobile menu ------------ -->
+	<section id="offscreen-menu" class="wrapper">
+		<?php wp_nav_menu(array(
+			'menu' => 'main',
+			'container' => false,
+			'menu_id' => 'menu-main-mobile',
+			'menu_class' => 'level-1',
+			"items_wrap" => '<nav id="%1$s" class="%2$s">%3$s</nav>',
+			'walker' => new Nova_Menu_Walker,
+		)); ?>
+	</section>
 
 
 	<div class="ghost-header"></div>
